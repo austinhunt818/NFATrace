@@ -42,6 +42,14 @@ public class NFATrace {
                     result.append("From: ").append(from).append(", To: ").append(to).append(", Transition: ").append(transition).append("\n");
                 }
                 JOptionPane.showMessageDialog(frame, result.toString(), "Input Data", JOptionPane.INFORMATION_MESSAGE);
+                JDialog nfaDialog = new JDialog(frame, "NFA Visualization", true);
+                NFADisplayPanel displayPanel = new NFADisplayPanel();
+                displayPanel.setPreferredSize(new Dimension(400, 300));
+
+                nfaDialog.add(displayPanel);
+                nfaDialog.pack();
+                nfaDialog.setLocationRelativeTo(frame);
+                nfaDialog.setVisible(true);
             }
         });
 
