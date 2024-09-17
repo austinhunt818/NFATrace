@@ -1,3 +1,5 @@
+package display;
+
 import javax.swing.*;
 import javax.swing.table.DefaultTableModel;
 import java.awt.*;
@@ -7,7 +9,7 @@ import java.awt.event.ActionListener;
 public class NFATrace {
     public static void main(String[] args) {
         // Create the main frame
-        JFrame frame = new JFrame("NFATrace");
+        JFrame frame = new JFrame("display.NFATrace");
         frame.setLayout(new BorderLayout());
 
         // Add a label to the top of the frame
